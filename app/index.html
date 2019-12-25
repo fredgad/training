@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-
+  
     <script
         src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -16,6 +16,17 @@
 <body class="body">
 
 <div id="wrapper">
+
+    <div id="toTop">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 455 455" style="fill: #ed1c24" xml:space="preserve">
+        <path d="M227.5,0C101.855,0,0,101.855,0,227.5S101.855,455,227.5,455S455,353.145,455,227.5S353.145,0,227.5,0z M199.476,355.589
+        	l-21.248-21.178L284.791,227.5L178.228,120.589l21.248-21.178L327.148,227.5L199.476,355.589z"/>
+        <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+        </svg>
+    </div>
 
     <header>
         <div class="header__img-top">
@@ -47,8 +58,9 @@
                 <div class="form__block_head">А Вы подписались на <b>training</b>?</div>
                 <div class="form__text">Вы находитесь в двух шагах, от того, чтобы стать самым интересным собеседником!</div>
                 <form class="form__form">
-                    <input type="text" name="name" placeholder="Ваше имя и фамилия">
+                    <input type="text" name="name" placeholder="Имя и фамилия">
                     <input type="email" name="email" placeholder="Email">
+                    <input type="text" name="company" placeholder="Компания">
                     <button class="submit">Подписаться</button>
                 </form>
             </div>
@@ -60,7 +72,7 @@
             <div></div>
             <h2>новости</h2>
         </div>
-        <p class="news__text">
+        <div class="news__text">
             <img src="./images/parts_04.png" alt="news image">
             <b>Дорогие Коллеги,</b>
             я рада приветствовать Вас в первом выпуске корпоративной образовательной рассылки <b>FLUENTRUSSIA</b> для HR и специалистов по обучению и развитию в России.
@@ -75,7 +87,7 @@
             <span>А 30 января 2020 г.</span> состоится ежегодная конференция по теме современных образовательных технологий <b>Ed Tech.</b> Для участия в мероприятиях необходима регистрация. Для регистрации на мероприятие Вы можете позвонить нам по номеру: <a href="tel:+79252768358"><b>+7 (925) 276-83-58.</b></a>
             <br/><br/>
             Я буду рада Вашим пожеланиям и предложениям и прошу Вас направлять их мне на адрес: <a href="mailto:ekaterina.ezdina@fluentrussia.ru" target="_new"><b>ekaterina.ezdina@fluentrussia.ru</b></a> или звонить по указанному телефону.
-        </p>
+        </div>
         <div class="news__bot">
             C наилучшими пожеланиями,<br/>
             Екатерина Ездина,<br/>
@@ -113,7 +125,7 @@
             </div>
             <div class="article__text">
                 <img src="./images/parts_06.png" alt="image">
-                <h3 class="article__head">Опыт сотрудников</h3>
+                <h3 class="article__text_head">Опыт сотрудников</h3>
                 <b>Как максимально использовать опыт сотрудников благодаря совместным усилиям HR и IT-специалистов</b>
                 <br/><br/>
                 Считается, что успешные сотрудники — то же самое, что успешные клиенты. Но,
@@ -137,7 +149,7 @@
             </div>
             <div class="article__text">
                 <img src="./images/parts_07.png" alt="image">
-                <h3 class="article__head">Шаг в будущее</h3>
+                <h3 class="article__text_head">Шаг в будущее</h3>
                 <b>Может ли виртуальная реальность придать новый импульс обучению на рабочем месте?</b>
                 <br/><br/>
                 Разработчики ПО надеются, что обучение новым навыкам в дополненной реальности вскоре станет новым значительным явлением.            
@@ -156,7 +168,7 @@
             </div>
             <div class="article__text">
                 <img src="./images/parts_08.png" alt="image">
-                <h3 class="article__head">Повышение эффективности</h3>
+                <h3 class="article__text_head">Повышение эффективности</h3>
                 <b>Мне предстоит сдать отчет о работе с низкой продуктивностью, и это ужасно!</b>
                 <br/><br/>
                 Совершенно справедливо, что Вы не будете всем нравиться, если Вы начальник. И, в первую очередь, 
@@ -179,8 +191,9 @@
                 <div class="form__block_head">А Вы подписались на <b>training</b>?</div>
                 <div class="form__text">Вы находитесь в двух шагах, от того, чтобы стать самым интересным собеседником!</div>
                 <form class="form__form">
-                    <input type="text" name="name" placeholder="Ваше имя и фамилия">
+                    <input type="text" name="name" placeholder="Имя и фамилия">
                     <input type="email" name="email" placeholder="Email">
+                    <input type="text" name="company" placeholder="Компания">
                     <button class="submit">Подписаться</button>
                 </form>
             </div>
@@ -195,7 +208,7 @@
             </div>
             <div class="res__text">
                 <img src="./images/parts_09.png" alt="image">
-                <h3 class="res__head">FLUENTRUSSIA WHITE PAPER</h3>
+                <h3 class="res__text_head">FLUENTRUSSIA WHITE PAPER</h3>
                 <b>Обучение иностранным языкам: достижение оптимального результата</b>
                 <br/><br/>
                 В <b></b>FR «White Paper»</b> обсуждается следующее: можно ли обеспечить отдачу от инвестиций в обучение,
@@ -216,7 +229,7 @@
             </div>
             <div class="res__text">
                 <img src="./images/parts_10.png" alt="image">
-                <h3 class="res__head">Совершенствуйте ваш деловой английский</h3>
+                <h3 class="res__text_head">Совершенствуйте ваш деловой английский</h3>
                 <b>Полное «руководство по выживанию» для проведения деловых встреч на английском языке</b>
                 <br/><br/>
                 Даже если Вы чувствуете себя комфортно, выступая перед другими людьми на родном языке, 
@@ -231,7 +244,7 @@
                 <a href="#"><i>Read it in English</i></a>
             </div>
 
-            <p class="res__text">
+            <div class="res__text">
                 <b>Четыре простых шага к усовершенствованию письменного английского</b>
                 <br/><br/>
                 Вам приходилось читать длинные, сложные предложения на английском языке — такие, что, дочитав до конца, 
@@ -239,7 +252,7 @@
                 Вы думали, что употребление длинных сложных предложений создаст лучшее впечатление о Ваших знаниях английского языка? 
                 В некоторых культурах считается, что сложные предложения со сложной лексикой демонстрируют высокий уровень образованности 
                 и знаний автора. Но в английском языке это не так.
-            </p>
+            </div>
             <div class="res__bot">
                 <div class="res__bot_img">
                     <img src="./images/fr_btn.png" alt="image">
@@ -254,7 +267,7 @@
             </div>
             <div class="res__text">
                 <img src="./images/parts_11.png" alt="image">
-                <h3 class="res__head">Трудности общения</h3>
+                <h3 class="res__text_head">Трудности общения</h3>
                 <b>ВИДЕО: Как подготовиться к трудному разговору... на любом языке</b>
                 <br/><br/>
                 Вам необходимо подготовиться к трудному разговору, который скорее всего будет на повышенных тонах — 

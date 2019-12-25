@@ -8,6 +8,18 @@ $(function () {
     if (e.originalEvent.wheelDelta > 0) {
       $('footer').removeClass('mooved');
     }
+  });
+  $(window).on('scroll', function (e) {
+    $('#toTop').addClass('mooved');
+    setTimeout(function () {
+      $('#toTop').removeClass('mooved');
+    }, 100);
+  });
+  $('#toTop').on('click', function () {
+    console.log('sad');
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800);
   }); // собираем все якоря; устанавливаем время анимации и количество кадров
 
   var anchors = [].slice.call($('a[href*="#"]')),

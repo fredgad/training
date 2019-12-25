@@ -10,7 +10,17 @@ $(window).on('wheel', (e)=> {
   }
 });
 
+$(window).on('scroll', (e)=> {
+  $('#toTop').addClass('mooved')
+  setTimeout(()=> {
+    $('#toTop').removeClass('mooved')
+  }, 100)
+});
 
+$('#toTop').on('click', ()=> {
+  console.log('sad')
+  $('html, body').animate({ scrollTop: 0 }, 800);
+});
 
 
 
