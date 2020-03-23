@@ -1,0 +1,43 @@
+#AddDefaultCharset UTF-8
+
+Content-Type: text/html; charset=utf-8
+
+Redirect 301 /hredtech https://edtech.fluentrussia.ru
+
+Redirect 301 /events https://fluentrussia.ru/site/page/events/
+Redirect 301 /site/page/communityforum https://fluentrussia.ru/platform/
+
+Redirect 301 /training/p1.html https://fluentrussia.ru/mail/training/p1.html
+Redirect 301 /training/p2.html https://fluentrussia.ru/mail/training/p2.html
+Redirect 301 /training/ https://fluentrussia.ru/mail/training/p1.html
+Redirect 301 /training  https://fluentrussia.ru/mail/training/p1.html
+
+#Redirect 301 /rostelecom-zoom https://zoom.us/j/7478110821
+Redirect 301 /rostelecom-zoom https://zoom.us/j/5271539885
+
+RewriteEngine on
+
+# Redirect to HTTPS
+# RewriteCond %{HTTP:PORT} !^443$
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R]
+
+# Redirect tothe ended slash at the end
+# RewriteBase /
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_URI} !(.*)/$
+# RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+
+# Redirect root page to the new website
+RewriteCond %{REQUEST_URI} ^/?$ [NC]
+RewriteRule .* /new/ [NC,L]
+
+# redirect on domain without www. and https
+#RewriteCond %{ENV:HTTPS} !on 
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# otherwise forward it to index.php
+RewriteRule . index.php
+php_value opcache.revalidate_freq 0

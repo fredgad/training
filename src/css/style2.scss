@@ -272,7 +272,6 @@ header {
         justify-content: space-between;
         margin: 50px 0;
         width: 100%;
-        max-height: 50px;
 
         a {
             font-weight: bold;
@@ -659,22 +658,18 @@ header {
     }
     .events__head::before {
         content: '';
-        height: 2px; 
+        height: 2px;
         width: 50%;
         position: absolute;
         top: 0;
         background: $mainColor;
     }
-    .second { 
+    .second {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%; 
-
-        > img {
-            margin-top: 30px;
-        }
 
         a:nth-child(2n - 1) img {
             margin-left: -2.5%;
@@ -826,7 +821,7 @@ footer {
                     input[type="checkbox"]:checked + label {
                         color: #fff;
                     }
-                } 
+                }
                 > fieldset {
                     display: block;
                     flex-wrap: wrap; 
@@ -1131,7 +1126,7 @@ footer {
         height: auto;
 
         .form__block {
-            margin: 50px auto;
+            margin: 50px auto; 
 
             .form__form {
                 flex-direction: column;

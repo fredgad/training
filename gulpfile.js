@@ -5,7 +5,6 @@ const
   minify = require('gulp-minify'),
   concat = require('gulp-concat'),
   cleanCSS = require('gulp-clean-css'),
-  autoprefixer = require('gulp-autoprefixer'),
   browserSync = require('browser-sync').create();
 
 function styles() {  
@@ -14,7 +13,26 @@ function styles() {
     .pipe(cleanCSS({
       level: 2
     }))
-    // .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })
+    .pipe(gulp.dest('app/css'))
+    .pipe(browserSync.stream())
+};
+
+function styles2() {  
+  gulp.src('src/css/style2.css')
+    .pipe(concat('style2.css'))
+    .pipe(cleanCSS({
+      level: 2
+    }))
+    .pipe(gulp.dest('app/css'))
+    .pipe(browserSync.stream())
+};
+
+function styles3() {  
+  gulp.src('src/css/style3.css')
+    .pipe(concat('style3.css'))
+    .pipe(cleanCSS({
+      level: 2
+    }))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.stream())
 };
@@ -45,6 +63,8 @@ function watch() {
   
   gulp.watch('./src/css/*.css', async ()=> {
     styles(); 
+    styles2(); 
+    styles3();
   });
   gulp.watch('./src/js/*.js', async ()=> { 
     scripts(); 
@@ -53,6 +73,8 @@ function watch() {
 
 gulp.task('styles', async ()=> { 
   styles(); 
+  styles2(); 
+  styles3();
 });
 gulp.task('scripts', async ()=> {
   scripts(); 

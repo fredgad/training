@@ -4,7 +4,7 @@ $mainColor: #ed1c24;
 .alert {
     position: absolute;
     z-index: 999;
-    background: #fff;
+    background: #fff; 
     height: 100%;
     width: 100%;
     top: 2px;
@@ -30,7 +30,7 @@ $mainColor: #ed1c24;
 .mobile_t, .mobile_t1, .mobile_t2, .mobile_t2_2 {
     display: none;
 }
-
+ 
 @media screen and (max-width: 366px) { 
 
     #wrapper #news {
@@ -40,37 +40,24 @@ $mainColor: #ed1c24;
             }
         }
     }
-    // .mobile_t2 {
-    //     display: none;
-    // }
-    // .mobile_t2_2 {
-    //     display: block;  
-    // }
 }
-@media screen and (max-width: 332px) {
+@media screen and (max-width: 356px) {
     .desktop_t {
         display: none;
     }
     .mobile_t {
-        display: block;
+        display: block; 
     }
 }
-@media screen and (max-width: 332px) {
-    .desktop_t1 {
-        display: none;
-    }
-    .mobile_t1 {
-        display: block;
-    }
-}
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 370px) {
     .desktop_t2 {
         display: none;
-    } 
+    }
     .mobile_t2 {
         display: block;
     }
 }
+
 @media screen and (max-width: 347px) {
     #wrapper #news {
         .news__text {
@@ -272,7 +259,6 @@ header {
         justify-content: space-between;
         margin: 50px 0;
         width: 100%;
-        max-height: 50px;
 
         a {
             font-weight: bold;
@@ -659,22 +645,18 @@ header {
     }
     .events__head::before {
         content: '';
-        height: 2px; 
+        height: 2px;
         width: 50%;
         position: absolute;
         top: 0;
         background: $mainColor;
     }
-    .second { 
+    .second {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%; 
-
-        > img {
-            margin-top: 30px;
-        }
 
         a:nth-child(2n - 1) img {
             margin-left: -2.5%;
@@ -826,7 +808,7 @@ footer {
                     input[type="checkbox"]:checked + label {
                         color: #fff;
                     }
-                } 
+                }
                 > fieldset {
                     display: block;
                     flex-wrap: wrap; 
@@ -1131,7 +1113,7 @@ footer {
         height: auto;
 
         .form__block {
-            margin: 50px auto;
+            margin: 50px auto; 
 
             .form__form {
                 flex-direction: column;

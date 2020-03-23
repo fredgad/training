@@ -42,7 +42,7 @@
   }
 }
 
-@media screen and (max-width: 332px) {
+@media screen and (max-width: 356px) {
   .desktop_t {
     display: none;
   }
@@ -51,16 +51,7 @@
   }
 }
 
-@media screen and (max-width: 332px) {
-  .desktop_t1 {
-    display: none;
-  }
-  .mobile_t1 {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 370px) {
   .desktop_t2 {
     display: none;
   }
@@ -294,7 +285,6 @@ header .header__nav {
           justify-content: space-between;
   margin: 50px 0;
   width: 100%;
-  max-height: 50px;
 }
 
 header .header__nav a {
@@ -750,10 +740,6 @@ header .form::before {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-}
-
-#events .second > img {
-  margin-top: 30px;
 }
 
 #events .second a:nth-child(2n - 1) img {
@@ -1511,4 +1497,4 @@ footer .unsub .unsub__form button:hover {
     height: 1px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style3.css.map */

@@ -294,7 +294,6 @@ header .header__nav {
           justify-content: space-between;
   margin: 50px 0;
   width: 100%;
-  max-height: 50px;
 }
 
 header .header__nav a {
@@ -750,10 +749,6 @@ header .form::before {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-}
-
-#events .second > img {
-  margin-top: 30px;
 }
 
 #events .second a:nth-child(2n - 1) img {
@@ -1511,4 +1506,4 @@ footer .unsub .unsub__form button:hover {
     height: 1px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style2.css.map */
